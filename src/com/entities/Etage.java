@@ -35,6 +35,13 @@ public class Etage implements Serializable{
 	private Immeuble immeuble;
 	
 	
+	public Etage(int id, int nbApp) {
+		super();
+		this.id = id;
+		this.nbApp = nbApp;
+	}
+
+
 	@OneToMany(mappedBy="Appartement", fetch=FetchType.EAGER)
 	List<Appartement> appartements=new ArrayList<Appartement>();
 

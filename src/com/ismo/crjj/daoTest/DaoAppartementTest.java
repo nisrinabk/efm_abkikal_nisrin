@@ -30,8 +30,8 @@ class DaoAppartementTest {
 		IDao dao = DaoFactory.getDAO(TypeDao.Appartement);
 		Appartement app = (Appartement) dao.getOne(3);
 
-		assertEquals(app.getLettre_appartement(), "app");
-		assertEquals(app.getNb_pieces_total(), 10);
+		assertEquals(app.getId(), "app");
+		assertEquals(app.getNbPiece(), 10);
 		
 		
 	}
